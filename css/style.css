@@ -127,3 +127,27 @@ section > h1 {
     }
 
 }
+@media (max-width : 767px) and (orientation: portrait) {
+    .navbar-header {
+        position: absolute;
+        margin-left: 25% !important;
+    }
+    header nav .navbar-right h1, header nav .navbar-right p {
+        text-align: center;
+    }
+    header nav .navbar-right {
+        margin-top: 120px;
+    }
+}
+@media (max-width : 767px) and (orientation: landscape) {
+    .navbar-header {
+        margin-left: 35% !important;
+    }
+    header nav .navbar-right h1, header nav .navbar-right p {
+        text-align: center;
+    }
+    article .social {
+        width: 50%;
+        margin-left: 25%;
+    }
+}
