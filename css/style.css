@@ -3,39 +3,49 @@
     font-family: 'Raleway';
     src: url(../font/Raleway-ExtraLight.ttf)  format('truetype');
 }
+/*Generic rules for the site*/
 body {
     background-color: #fff;
     font-family: 'Raleway', sans-serif;
+    font-size:16px;
 }
+/*Header specific Css Rules*/
 header nav.navbar {
     background-color: #fff;
     min-height: 150px;
     border: none;
 }
+
 header nav .container {
     border-bottom: 5px solid #73c55c;
 }
+
 header nav .navbar-brand {
     height: auto;
     padding: 0;
 }
+
 header nav .navbar-brand>img {
     height: 150px;
 }
-.navbar-right h1 {
+
+header nav .navbar-right h1 {
     font-size: 50px;
     text-transform: uppercase;
 }
-.navbar-right p {
+
+header nav .navbar-right p {
     text-align: right;
     font-size: 20px;
     font-weight: 500;
     text-transform: uppercase;
 }
+/*To adjust images style*/
 .image-size {
     width: 78%;
     margin-left: 13px;
 }
+
 .card {
     height: 120px;
     width: 120px;
@@ -46,41 +56,74 @@ header nav .navbar-brand>img {
     margin: 5px 130px 30px;
     padding: 10px;
 }
+
 .card > img {
     width : 100%;
     height: 75px;
 }
-.card > p{
+
+.card > p {
     text-align: center;
     font-weight: bold;
     padding-top: 2px;
     font-size: 20px;
+    text-transform: uppercase;
 }
+
 article .social > img {
     width: 100%;
     height: 210px;
 }
+
 article .social {
     border-radius: 2px;
     box-shadow: 0 1px 10px #c3c3c3;
     background-color: #fff;
     margin-bottom: 20px;
 }
-article h1 {
+
+article h2 {
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
 }
+
 article {
     text-align: center;
 }
+
 article a {
     color : #000000;
 }
+section > h1 {
+    border-bottom: 5px solid #73c55c;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
 .margin-bottom-50 {
     margin-bottom: 50px;
 }
+
 .container.margin-bottom-50 {
     padding-left : 0;
     padding-right: 0;
+}
+/*To make website Responsive*/
+@media (max-width : 1024px) {
+
+    .card {
+        margin-left: 15px;
+        margin-right: 0;
+        display: inline-block;
+    }
+    .image-size {
+        width: 100%;
+        margin-left: 0;
+    }
+    .container.margin-bottom-50 {
+        padding-left : 15px;
+        padding-right: 15px;
+    }
+
 }
